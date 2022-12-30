@@ -1,0 +1,14 @@
+<%- include('partials/header'); %> 
+
+<h1>Welcome Home</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eum asperiores cupiditate temporibus ratione, deserunt sint qui magni laudantium, quo corrupti ullam eos dolorum veritatis? Cupiditate dolorum voluptas nobis, repellat excepturi ab aperiam ut et asperiores impedit qui esse reiciendis maxime id quisquam iure facere omnis illum fugiat nemo veniam rerum! Libero doloremque cum qui facilis repellendus placeat unde accusamus tenetur magnam perferendis ipsa minus non saepe, iste animi officia eius ad dolores assumenda, nemo, quisquam perspiciatis consequuntur. Laudantium laboriosam maxime corporis quasi fuga culpa dignissimos iusto ut quidem. Blanditiis magnam, minima necessitatibus enim inventore quasi nostrum ex dolorem! Ea.</p>
+
+<% posts.forEach(function(item){ %> 
+    <h1><%= item.title %> </h1>
+    <p>
+        <%= (item.content).substring(0, 100)+"..." %>
+        <a href="post/<%= item.title %> ">Read More</a>
+    </p>
+<% }) %> 
+
+<%- include('partials/footer'); %> 

@@ -1,0 +1,15 @@
+<%- include('partials/header'); %> 
+
+<h1>About</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex veritatis natus doloremque tempore ipsam! Officiis perferendis nostrum quaerat similique quod quasi suscipit beatae eveniet, natus vitae est tempora asperiores excepturi aspernatur magnam adipisci voluptatem maiores. Quo quasi cupiditate ipsum nisi ducimus numquam natus eveniet deleniti? Voluptas voluptate magnam temporibus eveniet natus nostrum? Laudantium recusandae, deserunt voluptatum officia numquam eaque sit nihil id, magnam veniam blanditiis eos amet quas quis minima possimus qui facere incidunt consectetur autem labore? Magnam minus aperiam tenetur eos nostrum ipsam, facere voluptatem dicta quod porro ex fuga illum rerum amet quo, eveniet voluptates incidunt, reprehenderit quibusdam.</p>
+
+<div class="container d-flex flex-wrap justify-content-between text-center mt-4">
+    <% (data.members).forEach(function(person){ %> 
+        <div>
+            <img src=<%= person.img %>  alt="person-name" style="width: 14rem;">
+            <h2><%= person.name %> </h2>
+        </div>
+    <% }) %> 
+</div>
+
+<%- include('partials/footer'); %> 
